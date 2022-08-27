@@ -20,6 +20,8 @@ function responsiveMenu() {
     }
 }
 
+
+
 var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
