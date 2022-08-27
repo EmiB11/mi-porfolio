@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+
+    <link rel="icon" href="./favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EB Desarrollador Web</title>
+  </head>
+
+  <body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>/EB/</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="redes">
+              <a href="https://github.com/EmiB11" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/emiliano-barberis-developer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+             
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>Soy <span>Emi</span>, Full Stack Web Developer</h2>
+          <p class="descripcion">
+            Soy desarrollador web fullstack en busca de un puesto en una empresa IT que cuente con la oportunidad de trabajar con las últimas tecnologías en proyectos desafiantes y diversos.
+
+
+          </p>
+          <a href="#portfolio">Ir a Portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/miFoto.jpg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, Soy <span>Emiliano Barberis</span></h2>
+        <h3>Desarrollador Web</h3>
+        <p>
+          Amante de la tecnología y apasionado por la programación. Soy una persona con gran facilidad para el aprendizaje , una afición por la lógica y
+          disfruto aprendiendo y ampliando mis conocimientos de forma autodidacta.
+          <p>Tengo una ética de trabajo que fui desarrollando a lo largo de mi experiencia laboral y académica ,
+           lo que me dio un fuerte sentido de responsabilidad y compromiso.
+
+         Me destaco por ser proactivo y metódico, siempre busco nuevos retos y me adapto fácilmente a nuevos desafíos. Estoy abierto a aprender nuevas tecnologías y lenguajes. La comunicación y el trabajo en equipo es para mí esencial para poder crecer como desarrollador.
+          
+         </p>
+          
+          
+        </p>
+        <p>
+          Realicé proyectos en el bootcamp de Henry donde implementamos la metodología Scrum para trabajar en equipo utilizando git y github.
+           Pongo especial esfuerzo en optimizar mi código y proporcionar la mejor experiencia de usuario.Soy una persona con gran facilidad para el aprendizaje y una afición por la lógica.
+        </p>
+        <a href="http://127.0.0.1:5500/curriculum.html" target="_blank">Descargar CV</a>
+        <!-- <iframe src="img/CV-Emiliano_Barberis .pdf" style="width:100%;height:700px;"></iframe> -->
+      </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+      <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"> <i class="fa-solid fa-code"></i></span>
+          <h4>Diseño de Sitios Web</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Web</li>
+           
+            <li>Desarrollo en React</li>
+          </ul>
+          <p>
+            Trabajé en proyectos en el bootcamp de Henry como desarrollador front-end,
+            diseñando aplicaciones web, implementando diversas librerias como Bootstrap , MaterialUI,
+            Styled Components.
+            
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+          <h4>Desarrollador Backend</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Bases de datos</li>
+            
+            <li>Desarrollo en Node y Java</li>
+          </ul>
+          <p>
+           Trabajé en proyectos en el bootcamp de Henry como desarrollador backend ,
+           utilizando bases de datos tanto relacionales como Postgresql y no relacionales como Firebase.
+           Realizé las rutas para la conexión del cliente con la base de datos para procesar sus solicitudes y registrar los datos.
+           
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-database"></i></span>
+          <h4>Alojamiento de Sitios web</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Heroku</li>
+            <li>Vercel</li>
+            <li>Render</li>
+          </ul>
+          <p>
+           Realicé deploy de aplicaciones web tanto en el Frontend utilizando Vercel 
+           como en el Backend utilizando Heroku y Render.
+          </p>
+        </div>
+      </div>
+      
+        
+       
+       
+     
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill-container"> 
+        <div class="knowledge-part">
+            <h2><span>Knowledge |</span> Conocimientos</h2>
+            <div class="knowledge">
+                <div>
+                    <img src="./img/html-icon.png" alt="">
+                    <h3>HTML</h3>
+                </div>
+                <div>
+                    <img src="./img/css-icon.png" alt="">
+                    <h3>CSS</h3> 
+                </div>
+                <div><img src="./img/js-icon.png" alt="">
+                    <h3>Javascript</h3>
+                </div>
+                <div><img src="./img/logo512.png" alt="">
+                    <h3>React</h3>
+                </div>
+                <div><img src="./img/postgres-icon.png" alt="">
+                    <h3>PostgreSQL</h3>
+                </div>
+                <div><img src="./img/node-icon.png" alt="">
+                    <h3>Node js</h3>
+                </div>
+                <div><img src="./img/java-icon.png" alt="">
+                  <h3>Java</h3>
+                </div>
+               
+                <div><img src="./img/Firebase-icon.png" alt="">
+                  <h3>Firebase</h3>
+                </div>
+            </div>
+        </div>
+        <div class="tools-part">
+          <h2><span>Dev Tools |</span> Herramientas</h2>
+          <div class="tools">
+              <div>
+                  <img src="./img/github-icon.png" alt="">
+                  <h3>GitHub</h3>
+              </div>
+              <div>
+                  <img src="./img/vsc-icon.png" alt="">
+                  <h3>Visual Studio</h3>
+              </div>
+              <div>
+                  <img src="./img/git-icon.png" alt="">
+                  <h3 >GIT</h3>
+              </div>
+            
+              <div>
+                  <img src="./img/webpack-icon.png" alt="">
+                  <h3>Webpack</h3>
+              </div>
+             
+              <div>
+                  <img src="./img/redux-Devtools.jpg" alt="">
+                  <h3>Redux DevTools</h3>
+              </div>
+              <div>
+                <img src="./img/postman.png" alt="">
+                <h3>Postman</h3>
+            </div>
+          </div>
+      </div>
+  </div>
+  </div>
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">Mis Proyectos</h3>
+     
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-memoryGame">
+          <img src="img/memory-game.png" alt="" />
+          <div class="info">
+            <h4>Memory Game</h4>
+            <p>Juego de memoria realizado con React. </p>
+            <p>Ver mas...</p>
+          </div>
+          </a>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-mobi">
+          <img src="img/homeMobi.png" alt="" />
+          <div class="info">
+            <h4>Mobi ATR</h4>
+            <p>Ecommerce de productos para el hogar</p>
+            <p>Ver mas...</p>
+          </div>
+          </a>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-videogame">
+          <img src="img/homegame.png" alt="" />
+          <div class="info">
+            <h4>Videogame App</h4>
+            <p>Aplicación web donde se pueden ver todos los videojuegos</p>
+            <p>Ver mas...</p>
+          </div>
+          </a>
+        </div>
+        
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-todoApp">
+          <img src="img/home-todo-app.png" alt="" />
+          <div class="info">
+            <h4> App Lista de tareas </h4>
+            <p>Progresive web app para gestionar tus tareas</p>
+            <p>Ver mas...</p>
+          </div>
+          </a>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-porfolio-react">
+          <img src="img/porfolio-me.png" alt="" />
+          <div class="info">
+            <h4>Porfolio</h4>
+            <p>Porfolio realizado con React</p>
+            <p>Ver mas...</p>
+          </div>
+          </a>
+        </div>
+        <div class="proyecto hidden">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-porfolio-react">
+          <img src="img/homeMobi.png" alt="" />
+          <div class="info">
+            <h4>Descripcion Proyecto</h4>
+            <p>pagina web</p>
+          </div>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contactanos ahora</h3>
+      <div class="contenedor-form">
+        <form id="my-form" action="https://formspree.io/f/xwkzpbar" method="POST">
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Nombre Completo *"
+              class="input-mitad"
+              name ="nombre"
+            />
+            <input
+              type="email"
+              placeholder="Dirección de Email"
+              class="input-mitad"
+              name ="email"
+            />
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Tema..." class="input-full"  name="tema"/>
+          </div>
+          <div class="fila">
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu Mensaje..."
+              class="input-full"
+            ></textarea>
+            <p id="my-form-status"></p>
+          </div>
+
+          <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <p>Todos los derechos reservados - 2022</p>
+      <div class="redes">
+        <a href="https://github.com/EmiB11" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/emiliano-barberis-developer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+       
+      </div>
+    </footer>
+
+
+    <!-- SECCION MODAL -->
+    <div
+      id="pw-mobi"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="/img/mobi/DetailMobi.png" alt="" />
+            <img src="/img/mobi/carritoMobi.png" alt="" />
+            <img src="/img/mobi/AdminUsuariosMObi.png" alt="" />
+            <img src="/img/mobi/carouselMobi.png" alt="" />
+            <img src="/img/mobi/estrellasMobi.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+             Es una web e-commerce de muebles desarrollado
+              por un equipo de 8 personas usando SCRUM-Agile y
+              JS stack para un proyecto real. <br />Mi principal
+               contribución al proyecto:
+            </p>
+            <p>
+              carrito de
+              compras, login con google utilizando Firebase,
+              registro del usuario ,pasarela de pagos utilizando la
+              api de mercado pago , recupero de contraseña ,
+              deploy del proyecto del lado del backend.
+            </p>
+           <p>En este proyecto también implementamos chat online utilizando socket io ,login con google y newsletter </p>
+            <div class="eins-modal-text-2">
+              <i class="fa-solid fa-globe fa-xl"></i><a href="https://mobiatr.vercel.app" target="blank">https://mobiatr.vercel.app</a>
+            </div>
+            <div class="eins-modal-text-3">
+              <span>Tecnologías Usadas:</span>
+              <div class="eins-modal-tec">
+                <img src="/img/html-icon.png" alt="" />
+                <img src="/img/css-icon.png" alt="" />
+                <img src="/img/js-icon.png" alt="" />
+                <img src="/img/webpack-icon.png" alt="" />
+                <img src="/img/react-icon.png" alt="" />
+                <img src="/img/node-icon.png" alt="" />
+                <img src="/img/postgres-icon.png" alt="" />
+                
+                <div >
+                  <i class="fa-brands fa-github fa-xl"></i>
+                  <a
+                    href="https://github.com/EmiB11/Proyecto_Final_Mobi"
+                    target="blank"
+                  >
+                    <span> Ver código en repositorio de Github</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="pw-memoryGame"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="/img/imagen-game-intro.png" alt="" />
+            <img src="/img/memory-game.png" alt="" />
+            <img src="/img/win-game.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              Es un juego de memoria que consiste en encontrar los pares iguales <br />En este proyecto utilize React y custom hooks.
+            </p>
+            <p>
+              Los Hooks que utilizé para el manejo de estados y el tiempo  del juego fueron: useContext , useState , useEffect , useRef , useMemo , useCallback ,useNavigate , useSearchParams
+            </p>
+
+            <div class="eins-modal-text-2">
+              <i class="fa-solid fa-globe fa-xl"></i><a href="https://memory-game-emib11.vercel.app" target="blank">https://memory-game-emib11.vercel.app</a>
+            </div>
+            <div class="eins-modal-text-3">
+              <span>Tecnologías Usadas:</span>
+              <div class="eins-modal-tec">
+                <img src="/img/html-icon.png" alt="" />
+                <img src="/img/css-icon.png" alt="" />
+                <img src="/img/js-icon.png" alt="" />
+               <img src="/img/react-icon.png" alt="" />
+                
+                
+                <div >
+                  <i class="fa-brands fa-github fa-xl"></i>
+                  <a
+                    href="https://github.com/EmiB11/memory-game"
+                    target="blank"
+                  >
+                    <span>Ver código en repositorio de Github</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="pw-videogame"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="/img/videogame/allgames.png" alt="" />
+            <img src="/img/videogame/crearjuego+info2.png" alt="" />
+            <img src="/img/videogame/error404.png" alt="" />
+            <img src="/img/videogame/gameDetail.png" alt="" />
+            <img src="/img/homegame.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              La idea general del proyecto era crear una SPA
+              (Single Page Application) con temática de
+              videojuegos,. <br />utilizar las tecnologías de ReactJs,
+              Redux y CSS para el front-end y NodeJs en conjunto
+              con sequelize y express para el back-end. Postgresql para la base de datos.
+            </p>
+            <p>
+              Realizar testing de la aplicación utilizando Mocha en
+              la parte de Back-end y Jest en la parte de Front-end.
+              
+            </p>
+            <p>Dentro de la aplicación podemos : Buscar
+              videojuegos , filtrar por nombre , genero y origen
+              ,ordenar , ver el detalle , crear un juego nuevo ,
+              editar y eliminar.</p>
+            <div class="eins-modal-text-2">
+              <i class="fa-solid fa-globe fa-xl"></i><a href="https://videogames-app-orpin.vercel.app" target="blank">https://videogames-app-orpin.vercel.app</a>
+            </div>
+            <div class="eins-modal-text-3">
+              <span>Tecnologías Usadas:</span>
+              <div class="eins-modal-tec">
+                <img src="/img/html-icon.png" alt="" />
+                <img src="/img/css-icon.png" alt="" />
+                <img src="/img/js-icon.png" alt="" />
+                <img src="/img/webpack-icon.png" alt="" />
+                <img src="/img/react-icon.png" alt="" />
+                <img src="/img/node-icon.png" alt="" />
+                <img src="/img/postgres-icon.png" alt="" />
+                
+                <div >
+                  <i class="fa-brands fa-github fa-xl"></i>
+                  <a
+                    href="https://github.com/EmiB11/PI-Videogames-main"
+                    target="blank"
+                  >
+                    <span>Ver código en repositorio de Github</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="pw-todoApp"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="/img/todo-app-light.png" alt="" />
+            <img src="/img/todo-app.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+             Aplicación PWA (Progresive Web App) de lista de tareas que permite ser instalada como una aplicación nativa. <br />
+             Está realizada con React y se puede agregar tareas , eliminar las tareas completadas , eliminar alguna en particular
+             filtrar las tareas completadas o activas.
+            </p>
+            <p>
+               Se puede cambiar a un modo oscuro o claro. 
+            </p>
+            <p>Tiene la función de Drag and Drop para poder intercambiar de posición las tareas</p>
+            <div class="eins-modal-text-2">
+              <i class="fa-solid fa-globe fa-xl"></i><a href="https://listita.vercel.app" target="blank">https://listita.vercel.app</a>
+            </div>
+            <div class="eins-modal-text-3">
+              <span>Tecnologías Usadas:</span>
+              <div class="eins-modal-tec">
+                <img src="/img/html-icon.png" alt="" />
+                <img src="/img/css-icon.png" alt="" />
+                <img src="/img/js-icon.png" alt="" />
+                
+                <img src="/img/react-icon.png" alt="" />
+               
+                
+                <div >
+                  <i class="fa-brands fa-github fa-xl"></i>
+                  <a
+                    href="https://github.com/EmiB11/todo-app"
+                    target="blank"
+                  >
+                    <span>Ver código en repositorio de Github</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="pw-porfolio-react"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="/img/porfolio-about.png" alt="" />
+            <img src="/img/porfolio-me.png" alt="" />
+            <img src="/img/porfolio-contacto.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              Portafolio Web Personal, Construido con React.<br />Se
+             utilizó diferentes librerias para la animación de letras y el loader de la página
+            </p>
+            
+            
+            <div class="eins-modal-text-2">
+              <i class="fa-solid fa-globe fa-xl"></i><a href="https://myporfolio-one.vercel.app" target="blank">https://myporfolio-one.vercel.app</a>
+            </div>
+            <div class="eins-modal-text-3">
+              <span>Tecnologías Usadas:</span>
+              <div class="eins-modal-tec">
+                <img src="/img/html-icon.png" alt="" />
+                <img src="/img/css-icon.png" alt="" />
+                <img src="/img/js-icon.png" alt="" />
+               
+                <img src="/img/react-icon.png" alt="" />
+               
+                
+                <div >
+                  <i class="fa-brands fa-github fa-xl"></i>
+                  <a
+                    href="https://github.com/EmiB11/porfolio"
+                    target="blank"
+                  >
+                    <span>Ver código en repositorio de Github</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+    <script src="https://kit.fontawesome.com/412e98f00a.js" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
