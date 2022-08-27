@@ -1,4 +1,4 @@
-import 'eins-modal/src/eins-modal-plain';
+
 //Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
 function seleccionar(link) {
     var opciones = document.querySelectorAll('#links  a');
@@ -10,6 +10,9 @@ function seleccionar(link) {
     link.className = "seleccionado";
 }
 
+/* let linksMenu = document.getElementById("links");
+   console.log(linksMenu.children)
+ */
 //función que muestra el menu responsive
 function responsiveMenu() {
     var x = document.getElementById("nav");
